@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#social">Social</a></li>
+	  <li><a href="#Charts">Charts</a></li>
+    </ul>
+  </nav>
+
+
+  <section id="home" class="section">
+    <h1>Welcome to My Website</h1>
+    <p>This is my personal website where I showcase the results of my learning and practice in Python, HTML, CSS, and a touch of Javascript.</p>
+    <a href="#about" class="cta-button">Learn More</a>
+  </section>
+
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello, I am Sébastien, a French guy from Prague, Czech Republic. I have been living in this country for a while now. I come from an academic background in Biology, specifically Genetics, Molecular Biology, and Microbiology. However, I decided to make a change and venture into the world of Tech and IT since 2014. Since then, I have been happy, open-minded, straightforward, and very curious. I have dedicated myself to expanding my knowledge by learning new things.
+	  This is just a little static website build with basic HTML , CSS and Javascript. It will be mainly used to display graphics , charts , ... during my python learning process.</p>
+  </section>
+
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+	  <div class="level">
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square"></div>
+          </div>
+      <li>CSS</li>
+	  <div class="level">
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+       </div>
+      <li>Javascript</li>
+	  <div class="level">
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+       </div>
+	     <li>HTML</li>
+	  <div class="level">
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+       </div>	  
+	  
+	  <li>SQL (Sqlite, PostgreSQL)</li>
+	  <div class="level">
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square active"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+      </div>
+    </ul>
+  </section>
+
+ 
+  <section id="resume" class="section dark">
+    <h2>Resume</h2>
+    <p>Download my resume/CV to learn more about my qualifications and experiences.</p>
+    <a href=" " class="cta-button">Not available for the moment</a>
+  </section>
+
+
+<section id="Charts" class="section dark2">
+  <h2>Charts section </h2>
+  <p>The "Charts" section is intended to display the results of a Python script. 
+  The average humidity and temperature are the results of data retrieval from an API request. 
+  These two files are then used to display content in HTML. 
+  The Python script retrieves data and creates two small JavaScript files. The Python script runs twice daily, both in the morning and afternoon, to ensure the updates are functioning properly.
+  </p>
+  <div class="chart-container">
+    <div id="plot-humidity" class="chart"></div>
+    <div id="plot-temperature" class="chart"></div>
+  </div>
+  <script src="humidity_plot.js"></script>
+  <script src="temperature_plot.js"></script>
+  <h1>Currency Exchange Rates</h1>
+    <table id="exchangeRatesTable">
+	<p> For the currency exchange table, I employed a distinct approach. Data retrieval was achieved through web scraping using a Python script. 
+	Subsequently, a compact JavaScript file was generated to populate the data in the HTML table. 
+	This script is integrated into the same file as that for the humidity and temperature, hence it runs twice daily.
+	</p>
+        <tr>
+            <th>Currencies</th>
+            <th>Exchange Rate</th>
+        </tr>
+    </table>
+
+    <script src="currency.js"></script>
+    <script>
+        // table with currency exchange rates
+        function populateTable() {
+            var table = document.getElementById("exchangeRatesTable");
+
+            addRow("Euros", eurosValue, table);
+            addRow("US Dollar", dollarsValue, table);
+            addRow("Czech Koruna", czechCrownsValue, table);
+        }
+
+        // add rows to the table
+        function addRow(currency, rate, table) {
+            var row = table.insertRow();
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = currency;
+            cell2.innerHTML = rate;
+        }
+
+        // Call the function page loads
+        window.onload = populateTable;
+    </script>
+  </section>
+
+
+
+<section id="social" class="section">
+  <h2>Connect with Me</h2>
+  <ul class="social-icons">
+    <li><a href="https://cz.linkedin.com/in/sebastien-gadiou"><i class="fab fa-linkedin-in"></i></a></li>
+    <li><a href="https://github.com/SebastienGadiou"><i class="fab fa-github"></i></a></li>
+  </ul>
+</section>
+
+
+
+</body>
+</html>

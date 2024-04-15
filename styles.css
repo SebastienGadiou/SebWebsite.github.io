@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.section {
+  padding: 50px;
+}
+
+.dark {
+  background-color: #30125a;
+}
+
+.dark2 {
+  background-color: #660066;
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #ff8533;
+}
+
+#home {
+  background-image: url('bckg.png');
+  font-family: 'Barlow', sans-serif;
+  background-size: cover;
+  font-size: 20px;
+  background-position: center; 
+}
+
+#about {
+  text-align: justify;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+}
+#skills {
+  text-align: justify;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+}
+#resume {
+  text-align: justify;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+}
+#social {
+  text-align: justify;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+}
+
+
+
+.level {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; 
+  justify-content: center; 
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  background-color: #e5d4fa;
+  margin: 0 2px; 
+}
+
+.square.active {
+  background-color: #5e0cc2; 
+  
+}
+
+#social {
+  text-align: center; 
+}
+
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  color: #ff6600;
+  font-size: 24px; 
+}
+
+.social-icons li a:hover {
+  color: #ff6600; 
+}
+
+#Charts {
+  text-align: justify;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.chart {
+  flex: 1; 
+  margin-right: 10px; 
+}
+
+#plot-humidity {
+	width: 300px;
+	height: 400px;
+	background-color: #e5d4fa;
+
+}
+#plot-temperature {
+	width: 300px;
+	height: 400px;
+	background-color: #e5d4fa;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+th, td {
+	border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #34325c;
+}
