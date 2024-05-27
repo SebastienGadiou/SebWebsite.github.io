@@ -1,5 +1,5 @@
 
-var dataHumidity = [{'x': ['Prague', 'Washington D.C.', 'Paris'], 'y': [26.0, 93.0, 51.0], 'type': 'bar', 'name': 'Humidity', 'marker': {'color': '#1f77b4'}}];
+var dataHumidity = [{'x': ['Prague', 'Washington D.C.', 'Paris'], 'y': [45.0, 74.0, 48.0], 'type': 'bar', 'name': 'Humidity', 'marker': {'color': '#1f77b4'}}];
 
 var layoutHumidity = {
     title: 'Average Humidity by City',

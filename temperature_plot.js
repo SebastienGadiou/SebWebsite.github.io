@@ -1,5 +1,5 @@
 
-var dataTemperature = [{'x': ['Prague', 'Washington D.C.', 'Paris'], 'y': [24.5, 15.638999938964844, 18.899999618530273], 'type': 'bar', 'name': 'Temperature', 'marker': {'color': '#ff7f0e'}}];
+var dataTemperature = [{'x': ['Prague', 'Washington D.C.', 'Paris'], 'y': [24.149999618530273, 23.088998794555664, 17.299999237060547], 'type': 'bar', 'name': 'Temperature', 'marker': {'color': '#ff7f0e'}}];
 
 var layoutTemperature = {
     title: 'Average Temperature by City',
