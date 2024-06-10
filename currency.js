@@ -1,4 +1,4 @@
 
 var eurosValue = 1.00;
-var dollarsValue = 1.084897;
-var czechCrownsValue = 24.715410;
+var dollarsValue = 1.076317;
+var czechCrownsValue = 24.633418;
